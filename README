@@ -1,0 +1,30 @@
+Par projektu
+Labots Windows "Latvian (QWERTY)" klaviatūras izkārtojums, lai darbotos līdzīgi izkārtojumam vecākās Windows versijās (<Win10), akcentētos burtus veidojot tikai ar "Alt". 
+- Novākti visi dead keys
+- Backslash taustiņš izvada backslash, nevis grāda simbolu
+
+Instalācija
+Klaviatūras izkārtojuma DLL failu lvqmod.dll jāiekopē C:\Windows\System32, pēc tam ieteicams restarts, jo sistēma var uzreiz nepamanīt jauno izkārtojumu
+
+Izkārtojuma DLL faila būvēšana
+Lai uzbūvētu klaviatūras izkārtojuma DLL failu, vajadzīga "Microsoft Keyboard Layout Creator" aplikācija:
+https://www.microsoft.com/en-us/download/details.aspx?id=102134
+Programmā jāizpilda sekojošās komandas:
+    File -> Load source file -> lv-qwerty-modified.klc
+    Project -> Build DLL and Setup Package
+
+
+About
+Modified Windows "Latvian (QWERTY)" keyboard layout, to be more similar to the same layout in older Windows releases (<Win10), generating accented characters only with the "Alt" key.
+- Removed all dead keys
+- Backslash key outputs backslash, instead the degree symbol
+
+Installation
+Copy the keyboard layout DLL file lvqmod.dll to C:\Windows\System32, a restart is recommended afterwards, as the system might not immediately pick up the new layout.
+
+Building the layout DLL file
+To build the layout DLL, you'll need "Microsoft Keyboard Layout Creator" app:
+https://www.microsoft.com/en-us/download/details.aspx?id=102134
+Execute the following commands in the app:
+    File -> Load source file -> lv-qwerty-modified.klc
+    Project -> Build DLL and Setup Package
